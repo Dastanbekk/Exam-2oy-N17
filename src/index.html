@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/svg/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khan Academy</title>
+    <link rel="stylesheet" href="../dist/css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+</head>
+<body class="relative">
+    <header>
+        <nav class="py-[21px]">
+            <div class="container1">
+
+                <div class="flex items-center justify-between ">
+                    <div class="menu block md:hidden ">
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label for="burger-checkbox" class="burger"></label>
+                        <ul class="menu-list">
+                            <li><a href="#" class="menu-item">Asosiy</a><li>
+                            <li><a href="#" class="menu-item">Kurslarimiz</a><li>
+                            <li><a href="#" class="menu-item">Blog</a><li>
+                            <li><a href="#" class="menu-item">Biz haqimizda</a><li>
+                            <li><a href="#" class="menu-item">Bog’lanish</a><li>
+                            <li><a href="#" class="menu-item flex  items-center py-[10px] px-[20px]   ">
+                                Kirish
+                            </a><li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img   src="../assets/svg/logo.svg" alt="logo">
+                    </div>
+                    <div class="flex gap-[30px]  items-center">
+                        <ul class="hidden  gap-[30px]  lg:flex ">
+                            <li>
+                                <a href="#">Asosiy</a>
+                            </li>
+                            <li >
+                                <a class="flex items-center gap-1" href="#">Kurslarimiz <img src="../assets/svg/down.svg" alt=""></a> 
+                                
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Biz haqimizda</a>
+                            </li>
+                            <li>
+                                <a href="#">Bog’lanish</a>
+                            </li>
+                        </ul>
+                        <div class="hidden md:block">
+                            <img src="../assets/svg/search.svg" alt="search">
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="dropdown">
+                                <button class="dropbtn flex  items-center gap-4">EN <img src="../assets/svg/down.svg" alt=""></button>
+                                <div class="dropdown-content">
+                                  <a href="#">Rus</a>
+                                  <a href="#">Uzb</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="">
+                            <a href="#" class="hidden md:flex items-center py-[10px] px-[20px] bg-[#F8FAFC] border-2 border-[#EFF2F7]">
+                                Kirish
+                                <img src="../assets/svg/array-right.svg" alt="array">
+                            </a>
+                        </div>
+                        <div>
+                            <img src="../assets/img/admin.png" alt="user">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero bg-[#F8FAFC] pt-[80px] pb-[54px] md:pt-[100px] md:pb-[120px]">
+            <div class="container1">
+                <div class="flex justify-center items-center text-center gap-[28px] flex-col">
+                    <h3 class="text-[30px] max-w-[860px] font-bold md:text-[62px]">
+                        <span class="text-blue">Dasturlashni </span> biz bilan qulay 
+                        muhitda o‘rganing
+                    </h3>
+                    <p class="text-grey text-[16px] md:text-[20px] text-center max-w-[860px]">
+                        Khan Academy - bu siz izlagan akademiya bo’lib, unda siz juda qisqa muddatda istalgan 
+                        dasturlash sohasida Junior darajasiga chiqa olasiz! 
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 justify-center mt-[40px] md:mt-[60px]">
+                    <button class="flex gap-[10px] items-center bg-blue px-[40px] py-[21px] text-white rounded-lg">
+                        Boshlash
+                        <img src="../assets/svg/array-right2.svg" alt="">
+                    </button>
+                    <button class="flex gap-[10px] items-center bg-[#EFF2F7] px-[40px] py-[21px] text-black rounded-lg">
+                        <img src="../assets/svg/github.svg" alt="github">
+                        GitHub
+                    </button>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="flex  items-center mt-[40px] bg-white py-[20px] px-[30px] rounded-lg gap-2 md:gap-3" >
+                        <div>
+                            <img src="../assets/svg/shield.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[#323A56] text-[10px]">GitNation React Award</p>
+                            <h3 class="text-[#70C63B] max-w-[154px] text-[14px] md:text-[16px] md:max-w-[174px]">Most Impactful Project
+                                to the Community</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </header>
+
+
+    <main>
+
+        <section class="watch pt-[80px] pb-[20px] md:pt-[110px] md:pb-[65px]">
+            <div class="container1">
+                <div class="flex items-center flex-col gap-16px">
+                    <h3 class="text-[28px] text-center font-bold md:text-[54px] max-w-[233px] md:max-w-full">
+                        Kam vaqtda <span class="text-blue">ko‘proq o‘rganish</span>
+                    </h3>
+                    <p class="text-grey max-w-[249px] md:text-[20px] text-center md:max-w-full">
+                        Khan akademiyasida juda qisqa muddatda istalgan 
+                        dasturlash sohasida Junior darajasiga chiqa olasiz
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-[30px] border-2 rounded-xl  md:mt-[50px] overflow-hidden ">
+                    <div class="md:h-[586px] h-[300px] max-w-[770px] ">
+                        <iframe class=" w-full  h-full" src="https://www.youtube.com/embed/WXDDLyTI2Dk?si=mSOTJKsBmTa_k496" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          
+                        <video src=""></video>
+                    </div>
+                    <div class="md:px-[95px] px-[20px] py-[30px] md:py-[103px]">
+                        <div class="flex justify-center ">
+                            <div class="card shadow-lg p-5 rounded-lg">
+                                <div>
+                                    <img src="../assets/img/card1.png" alt="">
+                                </div>
+                                <div class="infos ">
+                                    <div class="flex gap-2 items-center mt-[12px]">
+                                        <a class="py-1 px-[6px] bg-[#EFF2F7] text-blue " href="#">PLUS
+                                        </a>
+                                        <p class="text-blue font-bold">
+                                            VERIFIED
+                                            CAPE TOWN
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[20px] mt-[24px] text-black font-bold">
+                                            Modern, Chic Penthouse
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <p class="text-[14px] mt-[12px] text-[#000]">
+                                            <b>$119</b>/night
+                                        </p>
+    
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <div class="flex gap-2">
+                                            <img src="../assets/svg/stars.svg" alt="">
+                                            <p class="text-black"><b>4.5</b> (190)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-[#F8FAFC] py-[70px]">
+            <div class="container1">
+                <h3 class="text-[28px] text-center font-bold md:text-[54px] max-w-[233px] md:max-w-full">
+                    Bizning ustun  <span class="text-blue">jihatlarimiz</span>
+                </h3>
+                <p class="text-grey max-w-[249px] md:text-[20px] text-center md:max-w-full">
+                    Quyida bizning ustun jihatlarimiz bilan tanishing
+                </p>
+
+
+                <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mt-[30px] md:mt-[50px]">
+                    <div class="bg-white p-10 rounded-xl">
+                        <img src="../assets/svg/oy.svg" alt="">
+                        <h3 class="font-bold mt-[21px] text-[20px]">Kuchli Mentorlar</h3>
+                        <p class="max-w-[300px] font-bold mt-[12px] text-grey">
+                            Webbrain UI strictly follows WAIARIA standarts for all components strictly follows.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl">
+                        <img src="../assets/svg/boyoq.svg" alt="">
+                        <h3 class="font-bold mt-[21px] text-[20px]">Muntazam o’rganish</h3>
+                        <p class="max-w-[300px] font-bold mt-[12px] text-grey">
+                            Webbrain UI strictly follows WAIARIA standarts for all components strictly follows.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl">
+                        <img src="../assets/svg/oy.svg" alt="">
+                        <h3 class="font-bold mt-[21px] text-[20px]">Qulay muhit</h3>
+                        <p class="max-w-[300px] font-bold mt-[12px] text-grey">
+                            Webbrain UI strictly follows WAIARIA standarts for all components strictly follows.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl">
+                        <img src="../assets/svg/oy.svg" alt="">
+                        <h3 class="font-bold mt-[21px] text-[20px]">Intensiv Darslar</h3>
+                        <p class="max-w-[300px] font-bold mt-[12px] text-grey">
+                            Webbrain UI strictly follows WAIARIA standarts for all components strictly follows.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl">
+                        <img src="../assets/svg/oy.svg" alt="">
+                        <h3 class="font-bold mt-[21px] text-[20px]">Ahil Jamoa</h3>
+                        <p class="max-w-[300px] font-bold mt-[12px] text-grey">
+                            Webbrain UI strictly follows WAIARIA standarts for all components strictly follows.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl">
+                        <img src="../assets/svg/oy.svg" alt="">
+                        <h3 class="font-bold mt-[21px] text-[20px]">Amaliy darslar</h3>
+                        <p class="max-w-[300px] font-bold mt-[12px] text-grey">
+                            Webbrain UI strictly follows WAIARIA standarts for all components strictly follows.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="py-[70px]">
+            <div class="container1">
+                <div class="flex items-center flex-col">
+                    <h3 class="text-[28px] text-center font-bold md:text-[54px] max-w-[792px]">
+                        Kelajagingizni 
+                        <span class="text-blue">Khan Academy bilan </span>
+                    quring
+                    </h3>
+                    <p class="text-grey mt-[16px] max-w-[249px] md:text-[20px] text-center md:max-w-full">
+                        A collection of websites and projects built with Webbrain UI
+                    </p>
+                    <div class=" mt-[20px] md:mt-[40px]">
+                        <button class="bg-blue text-white font-bold flex items-center gap-3 px-[40px] py-[21px] rounded-xl md:text-[18px] ">
+                            Ko’proq ko’rish
+                            <img src="../assets/svg/array-right2.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-[40px] mt-[75px]">
+                        <div class="grid grid-cols-1  gap-[40px]">
+                            <div class="img1 cursor-pointer relative ">
+                                <div class="box_blue   absolute   w-full h-full">
+                                    <div class=" flex justify-around items-end h-full gap-[100px] pb-[40px] ">
+                                        <h3 class="text-white font-bold text-[24px]">Project Name</h3>
+                                        <img src="../assets/svg/like.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img2 cursor-pointer relative ">
+                                <div class="box_blue   absolute   w-full h-full">
+                                    <div class=" flex justify-around items-end h-full gap-[100px] pb-[40px] ">
+                                        <h3 class="text-white font-bold text-[24px]">Project Name</h3>
+                                        <img src="../assets/svg/like.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="w-full h-full " src="../assets/img/img3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-blue">
+            <div class="container1">
+                <div class=" py-12 text-center  ">
+                    <div class="flex items-center flex-col">
+                        <h1 class="text-3xl leading-[64px] md:text-[54px] max-w-[658px] text-white font-bold mb-4">Shiddat bilan o'sayotgan Khan Academy</h1>
+                    <p class="text-[16px] md:text-[20px]  mb-12 text-white">
+                      We're dedicated to improving the experience and performance of Webbrain UI
+                    </p>
+                    </div>
+                
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                      <!-- Card 1 -->
+                      <div class="flex flex-col text-white items-center border-l-2">
+                        <p class="text-4xl font-bold">1.2M</p>
+                        <p class=" mt-[20px] text-blue-200">Download per month</p>
+                      </div>
+                      <!-- Card 2 -->
+                      <div class="flex flex-col border-l-2 text-white items-center">
+                        <p class="text-4xl font-bold">25.1K</p>
+                        <p class=" mt-[20px] text-blue-200">GitHub stars</p>
+                      </div>
+                      <!-- Card 3 -->
+                      <div class="flex flex-col border-l-2 text-white items-center">
+                        <p class="text-4xl font-bold">14</p>
+                        <p class=" mt-[20px] text-blue-200">Core contributors</p>
+                      </div>
+                      <!-- Card 4 -->
+                      <div class="flex flex-col border-l-2 text-white items-center">
+                        <p class="text-4xl font-bold">6.2K</p>
+                        <p class=" mt-[20px] text-blue-200">Discord members</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+        <section class="team md:py-[85px] py-[30px]">
+            <div class="container1">
+                <h3 class="text-[28px] text-center font-bold md:text-[54px] max-w-[233px] md:max-w-full">
+                    Bizning professional   <span class="text-blue">jamoamiz</span>
+                </h3>
+                <p class="text-grey max-w-[249px] md:text-[20px] text-center md:max-w-full">
+                    A collection of websites and projects built with Webbrain UI
+                </p>
+
+                <div class=" mt-[20px] flex justify-center md:mt-[40px]">
+                    <button class="bg-blue text-white  flex items-center gap-3 px-[40px] py-[21px] rounded-xl md:text-[18px] ">
+                        Ko’proq ko’rish
+                        <img src="../assets/svg/array-right2.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="mt-[25px] md:mt-[54px]">
+
+                    <div class="cards">
+                        <div class="card2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[40px]">
+                            <div class="inline-block rounded-xl shadow-xl">
+                                <div class="relative cursor-pointer card_img">
+                                    <img class="w-full"  src="../assets/img/girl.png" alt="">
+                                    <div class=" hidden w-full absolute team_card">
+                                        <div class=" px-[16px] pb-[20px] flex w-full justify-between gap-6">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infos flex flex-col items-center p-[30px] justify-center">
+                                    <h3 class="font-bold text-[18px] ">Cameron Williamson</h3>
+                                    <p class="text-grey">
+                                            Backend Developer
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inline-block rounded-xl shadow-xl">
+                                <div class="relative cursor-pointer card_img">
+                                    <img class="w-full"  src="../assets/img/man2.png" alt="">
+                                    <div class=" hidden w-full absolute team_card">
+                                        <div class=" px-[16px] pb-[20px] flex w-full justify-between gap-6">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infos flex flex-col items-center p-[30px] justify-center">
+                                    <h3 class="font-bold text-[18px] ">Cameron Williamson</h3>
+                                    <p class="text-grey">
+                                            Backend Developer
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inline-block rounded-xl shadow-xl">
+                                <div class="relative cursor-pointer card_img">
+                                    <img class="w-full"  src="../assets/img/girl2.png" alt="">
+                                    <div class=" hidden w-full absolute team_card">
+                                        <div class=" px-[16px] pb-[20px] flex w-full justify-between gap-6">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infos flex flex-col items-center p-[30px] justify-center">
+                                    <h3 class="font-bold text-[18px] ">Cameron Williamson</h3>
+                                    <p class="text-grey">
+                                            Backend Developer
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inline-block rounded-xl shadow-xl">
+                                <div class="relative cursor-pointer card_img">
+                                    <img class="w-full"  src="../assets/img/man2.png" alt="">
+                                    <div class=" hidden w-full absolute team_card">
+                                        <div class=" px-[16px] pb-[20px] flex w-full justify-between gap-6">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                            <img src="../assets/svg/tg.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infos flex flex-col items-center p-[30px] justify-center">
+                                    <h3 class="font-bold text-[18px] ">Cameron Williamson</h3>
+                                    <p class="text-grey">
+                                            Backend Developer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="partner bg-blue pt-[40px] pb-[45px] md:pt-[80px] md:pb-[95px]">
+            <div class="container1">
+                <div class="flex justify-center">
+                    <h3 class=" text-center text-white text-[24px] md:text-[54px] font-bold">
+                        Hamkorlik qilishga tayyormisiz?
+                    </h3>
+                </div>
+                <div class="flex justify-center  mt-4">
+                    <p class="text-center max-w-[253px] md:text-[18px] md:max-w-[551px] text-grey ">
+                        Our maintainers devote their time, effort, and heart to ensure
+                        Webbrain UI keeps getting better. Support us by donating to our
+                        collective
+                    </p>
+                </div>
+
+
+                <div class=" flex flex-col gap-[30px] mt-[25px] md:mt-[50px]">
+                    <div class="flex justify-center">
+                        <div class="bg-white p-[28px] rounded-xl flex flex-col gap-[10px] md:flex-row  md:gap-[90px]">
+                            <div class="flex  gap-4 ">
+                                <div>
+                                    <img src="../assets/svg/radio.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="font-bold ">Open Collective</h3>
+                                    <p class="text-grey ">Sponsor the Webbrain UI maintainers</p>
+                                </div>
+                            </div>
+                            
+                                <button class="text-white rounded-lg bg-blue py-[12px] px-[27px]">Sponsor</button>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="bg-white p-[28px] rounded-xl flex flex-col gap-[10px] md:flex-row  md:gap-[90px]">
+                            <div class="flex  gap-4 ">
+                                <div>
+                                    <img src="../assets/svg/radio.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="font-bold ">Open Collective</h3>
+                                    <p class="text-grey ">Sponsor the Webbrain UI maintainers</p>
+                                </div>
+                            </div>
+                            
+                                <button class="text-white rounded-lg bg-blue py-[12px] px-[27px]">Sponsor</button>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="mt-[30px] md:mt-[60px]">
+                    <h3 class="text-white md:text-[18px] justify-center flex">ORGANIZATION SPONSORS</h3>
+
+                    <div class="flex mt-8 gap-[24px] justify-center flex-wrap">
+                        <img src="../assets/img/google.png" alt="">
+                        <img src="../assets/img/google.png" alt="">
+                        <img src="../assets/img/google.png" alt="">
+                        <img src="../assets/img/google.png" alt="">
+                        <img src="../assets/img/google.png" alt="">
+                        <img src="../assets/img/google.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-[30px] md:mt-[60px]">
+                    <h3 class="text-white md:text-[18px] justify-center flex">INDIVIDUAL SPONSORS</h3>
+
+                    <div class="flex mt-8 gap-[24px] justify-center items-center flex-wrap">
+                        <img src="../assets/img/ava1.png" alt="">
+                        <img src="../assets/img/ava2.png" alt="">
+                        <img src="../assets/img/ava3.png" alt="">
+                        <img src="../assets/img/ava4.png" alt="">
+                        <img src="../assets/img/ava5.png" alt="">
+                        <img src="../assets/img/ava6.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="project py-[55px] md:py-[110px]">
+            <div class="container1">
+                <p class="flex justify-center text-[16px] text-blue md:text-[18px]">PREMIUM COMPONENTS</p>
+                <h3 class="text-[28px] flex  gap-2 mt-4 justify-center text-center font-bold md:text-[54px]">
+                    Bizning<span class="text-blue"> loyihalar</span>
+                </h3>
+                <div class="flex justify-center">
+                    <p class="max-w-[485px] text-grey text-center mt-4">Beautiful and responsive React components to build your
+                        application or marketing pages quicker.</p>
+                </div>
+                <div class=" mt-[20px] flex justify-center md:mt-[40px]">
+                    <button class="bg-blue text-white w-full justify-center md:max-w-[180px]  flex items-center gap-3 px-[40px] py-[21px] rounded-xl md:text-[18px] ">
+                        Batafsil
+                        <img src="../assets/svg/array-right2.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="flex items-end ">
+                    <div class=" mr-[-150px] md:mr-[0px]">
+                    <img src="../assets/img/project-img1.png" alt="">
+                    </div>
+                    <div class=" z-10">
+                    <img src="../assets/img/project-img2.png" alt="">
+                    </div>
+                    <div class="ml-[-150px] md:ml-[0px] z-0">
+                    <img src="../assets/img/project-img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="strongs">
+            <div class="container1">
+                <h3 class="text-[28px] flex  gap-2 mt-4 justify-center text-center font-bold md:text-[54px]">
+                    Bizning<span class="text-blue"> loyihalar</span>
+                </h3>
+                <div class="flex justify-center">
+                    <p class="max-w-[485px] text-grey text-center mt-4">Beautiful and responsive React components to build your
+                        application or marketing pages quicker.</p>
+                </div>
+                <div class=" mt-[20px] flex justify-center md:mt-[40px]">
+                    <button class="bg-blue text-white w-full justify-center md:max-w-[235px]  flex items-center gap-3 px-[40px] py-[13px] rounded-xl md:text-[18px] ">
+                        Biz haqimizda
+                        <img src="../assets/svg/array-right2.svg" alt="">
+                    </button>
+                </div>
+                
+            </div>
+            <div class="mt-[80px] md:mt-[145px]">
+                <img src="../assets/img/sound.png" alt="">
+            </div>
+        </section>
+
+        <section class="contact py-[35px] bg-blue">
+            <div class="container1">
+                <div class="flex justify-center gap-[20px] md:justify-between  flex-wrap ">
+                    <div class="flex gap-[20px] items-center">
+                        <div><img class="w-full" src="../assets/svg/discord.svg" alt=""></div>
+                        <div>
+                            <h3 class="text-white text-[20px] ">Biz bilan bog’lanish</h3>
+                            <p class="text-grey ">Feel free to ask questions, reports, issues and meet new people</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="text-bold py-[20px] px-[40px] bg-white rounded-xl">
+                            <span class="text-blue">#KhanAcademy</span>ga qo‘shilish
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="py-[55px] md:py-[110px] bg-[#F8FAFC]">
+        <div class="container1">
+            <div class="flex gap-5 flex-col-reverse md:flex-row">
+                <div>
+                    <img src="../assets/svg/logo.svg" alt="">
+                    <p class="max-w-[161px] text-grey mt-4">Istiklal street, Tashkent, 
+                        Uzbekistan, 200136 </p>
+                    <div class="flex items-center gap-[10px] mt-[20px]">
+                        <a href="#"><img src="../assets/svg/face.svg" alt=""></a>
+                        <a href="#"><img src="../assets/svg/insta.svg" alt=""></a>
+                        <a href="#"><img src="../assets/svg/twitter.svg" alt=""></a>
+                        <a href="#"><img src="../assets/svg/in.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="grid mx-auto gap-[40px] grid-cols-3 xl:grid-cols-4">
+                    <div>
+                        <h3>Support</h3>
+                        <ul class="flex flex-col gap-[18px] text-grey mt-5">
+                            <li>
+                                <a href="#">Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Security</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Support</h3>
+                        <ul class="flex flex-col gap-[18px] text-grey mt-5">
+                            <li>
+                                <a href="#">Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Security</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Support</h3>
+                        <ul class="flex flex-col gap-[18px] text-grey mt-5">
+                            <li>
+                                <a href="#">Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Security</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden flex-col gap-5 xl:flex">
+                        <h3 class="text-black">Subscribe</h3>
+                        <p class="text-grey">
+                            Subscribe to get the latest news 
+                            from us
+                        </p>
+                        <div class="flex bg-white px-[10px] rounded-lg">
+                            <input class="outline-none border-none" type="text" placeholder="hello@gmail.com">
+                            <img src="../assets/svg/tg2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex max-w-[335px] h-[30px] md:hidden   bg-white px-[10px] rounded-lg">
+                        <input class="outline-none  w-[180px] inline border-none" type="text" placeholder="hello@gmail.com">
+                        <img src="../assets/svg/tg2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container1{
+    max-width: 1440px; 
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.dropbtn {
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #EFF2F7;
+    border-radius: 5px;
+
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+  
+  .burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #1D72D2;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 70%;
+    height: 100vh;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+
+
+
+
+  .img1{
+    background-image: url("../../assets/img/img1.png");
+    background-repeat: no-repeat;
+    max-height: 360px;
+    height: 100%;  
+    background-position: center;
+    border-radius: 20px;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .img2{
+    background-image: url("../../assets/img/img2.png");
+    background-repeat: no-repeat;
+    max-height: 360px;
+    height: 100%;
+    background-position: center;
+    border-radius: 20px;
+    background-size: cover;
+    overflow: hidden;
+
+  }
+
+
+  .box_blue{
+    bottom: -400px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 15.63%, rgba(32, 81, 137, 0.90) 100%),  rgba(211, 211, 211, 0.016) 50% / cover no-repeat;
+  }
+
+  .img1:hover .box_blue{
+    bottom: 0px;
+    transition: all 0.3s;
+  }
+  .img2:hover .box_blue{
+    bottom: 0px;
+    transition: all 0.3s;
+  }
+  .img3:hover .box_blue{
+    bottom: 0px;
+    transition: all 0.3s;
+  }
+
+  .team_card{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0.99%, rgba(32, 81, 137, 0.9) 100%);
+    
+  } 
+
+  .card_img:hover .team_card{
+    bottom: 0;
+    display: block;
+    transition: ease-in-out 3s;
+  }
