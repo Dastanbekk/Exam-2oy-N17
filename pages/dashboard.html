@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/svg/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-tooltip"></script>
+    <link rel="stylesheet" href="../../dist/css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="flex w-[97vw]  ">
+  <div class=" flex   ">
+    <div class="menu flex ml-[40px] mt-[40px]  md:hidden ">
+      <input  type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <label for="burger-checkbox" class="burger"></label>
+      <ul class="menu-list">
+        <ul class="space-y-3 my-8 flex-1">
+          <li>
+            <a href="../index.html"
+              class="text-sm flex items-center text-[#007bff] border-l-[5px] border-[#077bff] bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide1.svg" alt="">
+              <span class="ml-5">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide2.svg" alt="">
+              <span class="ml-5">Mening kurslarim</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide3.svg" alt="">
+              <span class="ml-5">Profilim</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide4.svg" alt="">
+              <span class="ml-5">Topshiriqlar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide5.svg" alt="">
+              <span class="ml-5">Viktorina</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide6.svg" alt="">
+              <span class="ml-5">Xabarlar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide7.svg" alt="">
+              <span class="ml-5">To’lovlar tarixi</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"
+              class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+              <img src="../assets/dashboard_svg/slide8.svg" alt="">
+              <span class="ml-5">Chiqish</span>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class=" py-5  ">
+
+      <nav class="bg-white  w-[19vw] shadow-xl hidden md:block h-screen     py-6 overflow-auto">
+        <div class="relative flex flex-col h-full">
+          <a href="../index.html" class="text-center"><img src="../../assets/svg/logo.svg" alt="logo"
+            class='w-[160px] inline' />
+          </a>
+  
+          <ul class="space-y-3 my-8 flex-1">
+            <li>
+              <a href="#"
+                class="text-sm flex items-center text-[#007bff] border-l-[5px] border-[#077bff] bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide1.svg" alt="">
+                <span class="ml-5">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide2.svg" alt="">
+                <span class="ml-5">Mening kurslarim</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide3.svg" alt="">
+                <span class="ml-5">Profilim</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide4.svg" alt="">
+                <span class="ml-5">Topshiriqlar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide5.svg" alt="">
+                <span class="ml-5">Viktorina</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide6.svg" alt="">
+                <span class="ml-5">Xabarlar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide7.svg" alt="">
+                <span class="ml-5">To’lovlar tarixi</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"
+                class="text-black text-sm flex items-center hover:text-[#007bff] hover:border-l-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all">
+                <img src="../assets/dashboard_svg/slide8.svg" alt="">
+                <span class="ml-5">Chiqish</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="w-[81vw]">
+    <div class="py-5 px-[40px] flex items-center justify-between ">
+      <div>
+        <a href="#" class="py-1 px-4 hidden sm:block bg-grey text-white rounded-full">Asosiy menu</a>
+      </div>
+      <div class="flex items-center gap-[40px]">
+        <div class="hidden xl:block"><input type="date" class="shadow-lg rounded-full text-grey"></div>
+        <div class="hidden xl:flex items-center shadow-lg py-3 rounded-full px-[12px]"><input type="text" class="outline-none border-none" placeholder="Nimani qidiramiz?"> <img src="../assets/svg/search.svg" alt=""></div>
+        <div class="hidden xl:block"><img src="../assets/dashboard_svg/top1.svg" alt=""></div>
+        <div class="hidden xl:block"><img src="../assets/dashboard_svg/top2.svg" alt=""></div>
+        <div class="flex gap-2 items-center">
+          <div>
+            <h3 class="text-grey">Kalimetov</h3>
+            <h3 class="text-grey">Dilmurod</h3>
+          </div>
+          <div><img src="../assets/images/ava1.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="py-[40px] px-[60px] bg-[#F8FAFC]">
+      <h3 class="font-bold ">Umumiy</h3>
+      <div class="grid gap-5 grid-cols-1 xl:grid-cols-[70%_minmax(30%,_1fr)]">
+        <div>
+          <div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-white rounded-lg shadow">
+
+              <div class="flex items-center bg-white p-4 rounded-lg ">
+                <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
+                  <img src="../assets/dashboard_svg/card3.svg" alt="">
+                </div>
+                <div class="ml-4">
+                  <div class="flex justify-between ">
+                    <p class="text-2xl font-semibold ">2</p>
+                  <span class="text-blue-500 text-sm font-semibold text-blue py-2 px-4 rounded-full bg-[#F1F8FF]">+35%</span>
+                  </div>
+                  <p class="text-gray-500">Ro’yxatdan
+                    o’tilgan kurslar</p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-center bg-white p-4 rounded-lg ">
+                <div class="">
+                  <img class="w-full h-full" src="../assets/dashboard_svg/card2.svg" alt="">
+                </div>
+                <div class="ml-4">
+                  <div class="flex justify-between w-[150px]">
+                    <p class="text-2xl font-semibold ">2</p>
+                  <span class="text-blue-500 text-sm font-semibold text-blue py-2 px-4 rounded-full bg-[#F1F8FF]">+35%</span>
+                  </div>
+                  <p class="text-gray-500 max-w-[50px]">Amaldagi
+                    kurslar</p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-center bg-white p-4 rounded-lg ">
+                <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
+                  <img src="../assets/dashboard_svg/card1.svg" alt="">
+                </div>
+                <div class="ml-4">
+                  <div class="flex justify-between w-[150px]">
+                    <p class="text-2xl font-semibold ">2</p>
+                  <span class="text-blue-500 text-sm font-semibold text-blue py-2 px-4 rounded-full bg-[#F1F8FF]">+35%</span>
+                  </div>
+                  <p class="text-gray-500 max-w-[50px]">Tugatilgan kurslar</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="grid grid-cols-1 gap-2 xl:grid-cols-[60%_minmax(40%,_1fr)] mt-5">
+            <div>  
+            <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+              <!-- Заголовок и выбор периода -->
+              <div class="flex justify-between items-center border-b pb-4 mb-4">
+                <h2 class="text-xl font-semibold text-gray-800">Mening faoliligim</h2>
+                <div>
+                  <select class="border border-gray-300 rounded-md text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>Haftalik</option>
+                    <option>Oylik</option>
+                    <option>Yillik</option>
+                  </select>
+                </div>
+              </div>
+          
+              <!-- График -->
+              <div class="relative">
+                <canvas id="myChart" class="w-full h-64"></canvas>
+              </div>
+            </div>
+            </div>
+            <div class="p-4 bg-white">
+              <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">Topshiriqlar</h2>
+                <select class="border border-gray-300 rounded px-2 py-1 text-sm">
+                  <option>Haftalik</option>
+                  <option>Kunlik</option>
+                  <option>Oylik</option>
+                </select>
+              </div>
+              <div class=" flex flex-col gap-4 mt-[30px] space-y-4">
+                <!-- Bajарilgan -->
+                <div>
+                  <div class="flex justify-between text-sm mb-1">
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-blue h-2.5 rounded-full" style="width: 80%;"></div>
+                  </div>
+                </div>
+                <!-- Bajarilmagan -->
+                <div>
+                  <div class="flex justify-between text-sm mb-1">
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 60%;"></div>
+                  </div>
+                </div>
+                <!-- Davom etayotgan -->
+                <div>
+                  <div class="flex justify-between text-sm mb-1">
+
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width: 40%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[50px] flex flex-col gap-5">
+                <div class="flex  items-center">
+                  <div class="w-[10px] h-[10px] bg-blue rounded-full" ></div>
+                  <h3>Bajarilgan</h3>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-[10px] h-[10px] bg-yellow-500 rounded-full" ></div>
+                  <h3>Bajarilmagan</h3>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-[10px] h-[10px] bg-green-600 rounded-full" ></div>
+                  <h3>Davom etayotgan</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 xl:grid-cols-2 mt-[20px]">
+            <div>
+              <div class="p-4 max-w-lg mx-auto bg-white rounded-lg shadow-md">
+                <div class="flex justify-between items-center mb-4">
+                  <h2 class="text-lg font-semibold">Viktorinalar</h2>
+                  <select class="border border-gray-300 rounded px-3 py-1 text-sm">
+                    <option>Haftalik</option>
+                    <option>Oylik</option>
+                    <option>Kunlik</option>
+                  </select>
+                </div>
+              
+                <div class="space-y-4 flex flex-col gap-[20px] mt-[40px]">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                      <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <img src="../assets/dashboard_svg/vik1.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium">Ma'lumotlar tuzilmasi</p>
+                        <p class="text-xs text-gray-500">Bugun, 16:30</p>
+                      </div>
+                    </div>
+                    <span class="px-3 py-1 text-xs font-semibold text-[#70C63B] bg-green-100 rounded-full">Muvaffaqiyatli</span>
+                  </div>
+              
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                      <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <img src="../assets/dashboard_svg/vik1.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium">HTML va CSS haqida</p>
+                        <p class="text-xs text-gray-500">15-aprel, 22:00</p>
+                      </div>
+                    </div>
+                    <span class="px-3 py-1 text-xs font-semibold text-[#ECC744] bg-yellow-100 rounded-full">Kutilmoqda</span>
+                  </div>
+              
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                      <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <img src="../assets/dashboard_svg/vik1.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium">Phyton</p>
+                        <p class="text-xs text-gray-500">23-mart, 09:30</p>
+                      </div>
+                    </div>
+                    <span class="px-3 py-1 text-xs font-semibold text-[#ECC744] bg-yellow-100 rounded-full">Kutilmoqda</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div>
+              <div class="p-4 max-w-lg mx-auto bg-white rounded-lg shadow-md">
+                <div class="flex justify-between items-center mb-4">
+                  <h2 class="text-lg font-semibold">Viktorinalar</h2>
+                  <select class="border border-gray-300 rounded px-3 py-1 text-sm">
+                    <option>Haftalik</option>
+                    <option>Oylik</option>
+                    <option>Kunlik</option>
+                  </select>
+                </div>
+              
+                <div class="space-y-4 flex flex-col gap-[20px] mt-[40px]">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                      <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <img src="../assets/dashboard_svg/vik1.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium">Ma'lumotlar tuzilmasi</p>
+                        <p class="text-xs text-gray-500">Bugun, 16:30</p>
+                      </div>
+                    </div>
+                    <span class="px-3 py-1 text-xs font-semibold text-[#70C63B] bg-green-100 rounded-full">Muvaffaqiyatli</span>
+                  </div>
+              
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                      <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <img src="../assets/dashboard_svg/vik1.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium">HTML va CSS haqida</p>
+                        <p class="text-xs text-gray-500">15-aprel, 22:00</p>
+                      </div>
+                    </div>
+                    <span class="px-3 py-1 text-xs font-semibold text-[#ECC744] bg-yellow-100 rounded-full">Kutilmoqda</span>
+                  </div>
+              
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                      <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <img src="../assets/dashboard_svg/vik1.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="text-sm font-medium">Phyton</p>
+                        <p class="text-xs text-gray-500">23-mart, 09:30</p>
+                      </div>
+                    </div>
+                    <span class="px-3 py-1 text-xs font-semibold text-[#ECC744] bg-yellow-100 rounded-full">Kutilmoqda</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="bg-white px-[30px] py-[25px]">
+          <div class="flex justify-between">
+            <p>Profilim</p>
+            <img src="../assets/dashboard_svg/dot.svg" alt="">
+          </div>
+          <div class="flex justify-center mt-[40px]">
+            <img src="../assets/images/ava2.png" alt="">
+          </div>
+          <div class="mt-5">
+            <h3 class="flex justify-center font-bold text-[18px]">Kalimbetov Dilmurod</h3>
+            <p class="text-grey justify-center flex">O’quvchi</p>
+          </div>
+          <div class="flex flex-col items-center mt-5 gap-5">
+            <div class="flex gap-2 items-center">
+              <div>
+                <img src="../assets/dashboard_svg/tel.svg" alt="">
+              </div>
+              <div>
+                <p class="text-grey">Telefon raqamim</p>
+                <h3 class="font-bold text-[18px]">(90) 723 45 45</h3>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <div>
+                <img src="../assets/dashboard_svg/tel.svg" alt="">
+              </div>
+              <div>
+                <p class="text-grey">Telefon raqamim</p>
+                <h3 class="font-bold text-[18px]">(90) 723 45 45</h3>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between mt-[30px]">
+            <p>Xabarlar</p>
+            <img src="../assets/dashboard_svg/dot.svg" alt="">
+          </div>
+          <div class="flex items-center mt-7">
+            <div class="flex gap-2">
+              <div>
+                <img src="../assets/dashboard_svg/online.svg" alt="">
+              </div>
+              <div>
+                <h3>Wade Warren</h3>
+                <p class="text-[10px] text-grey">Salom, kechagi topshiriqlarni bajardin ...</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-[6px] text-grey">11:23
+                3</p>
+                <img src="../assets/dashboard_svg/three.svg" alt="">
+            </div>
+          </div>
+          <div class="flex items-center mt-7">
+            <div class="flex gap-2">
+              <div>
+                <img src="../assets/dashboard_svg/online.svg" alt="">
+              </div>
+              <div>
+                <h3>Wade Warren</h3>
+                <p class="text-[10px] text-grey">Salom, kechagi topshiriqlarni bajardin ...</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-[6px] text-grey">11:23
+                3</p>
+                <img src="../assets/dashboard_svg/three.svg" alt="">
+            </div>
+          </div>
+          <div class="flex items-center mt-7">
+            <div class="flex gap-2">
+              <div>
+                <img src="../assets/dashboard_svg/online.svg" alt="">
+              </div>
+              <div>
+                <h3>Wade Warren</h3>
+                <p class="text-[10px] text-grey">Salom, kechagi topshiriqlarni bajardin ...</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-[6px] text-grey">11:23
+                3</p>
+                <img src="../assets/dashboard_svg/three.svg" alt="">
+            </div>
+          </div>
+          <div class="flex flex-col mt-[20px] ">
+            <button  class="py-[16px] rounded-lg bg-[#EFF2F7] text-blue">
+              Ko’proq ko’rish
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const data = {
+    labels: ['Du', 'Se', 'Cho', 'Pa', 'Ju', 'Sha', 'Ya'],
+    datasets: [{
+      label: 'Ko\'rishlar',
+      data: [30, 45, 25, 34, 40, 50, 32],
+      borderColor: '#2563eb', // Синий цвет линии
+      backgroundColor: 'rgba(37, 99, 235, 0.2)', // Полупрозрачный фон
+      pointBackgroundColor: '#2563eb', // Точки
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: '#2563eb',
+      tension: 0.4, // Кривая линии
+      fill: true, // Заполнение области под графиком
+    }]
+  };
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return `${context.dataset.label}: ${context.raw} ta`;
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 50,
+        ticks: {
+          stepSize: 10
+        }
+      }
+    }
+  };
+
+  new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: options
+  });
+</script>
+
+</body>
+</html>
